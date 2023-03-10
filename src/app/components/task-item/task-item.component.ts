@@ -11,8 +11,13 @@ export class TaskItemComponent {
   @Input() task: Task = { id: 0, text: '', day: '', reminder: false };
   faTimes = faTimes;
 
+  constructor() {}
 
 
+  onDelete(task: Task) {
+    console.log(task);
+  }
+  
 
 
 }
